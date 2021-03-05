@@ -21,7 +21,7 @@ if(ecurie.id != '') {
     e.preventDefault();
     if(!inputNom.checkValidity() || !inputSiegeSocial.checkValidity() || !inputMoteur.checkValidity() ||
     !inputChassis.checkValidity() || !inputLivree.checkValidity() || !inputSponsors.checkValidity()) {
-      alert('Champ manquant');
+      alert('Champ(s) manquants(s)');
     } else {
       addTeam();
     }

@@ -1,3 +1,6 @@
+/**
+ * Classe ecurie
+ */
 export class Ecurie {
   
     /*constructor(id, nom, siegeSocial, moteur, chassis, livree, sponsors) {
@@ -71,6 +74,10 @@ export class Ecurie {
     }
 }
 
+/**
+ * modification de l'ecurie
+ * @param {*} teamId 
+ */
 export function modifTeam(teamId) {
     let nom = document.querySelector('#nom');
     let siegeSocial = document.querySelector('#siegeSocial');
@@ -107,7 +114,7 @@ export function modifTeam(teamId) {
       e.preventDefault();
       if(!nom.checkValidity() || !siegeSocial.checkValidity() || !moteur.checkValidity() ||
           !chassis.checkValidity() || !livree.checkValidity() || !sponsors.checkValidity()) {
-        alert('Champ manquant');
+        alert('Champ(s) manquant(s)');
       } else {
         let tmp = {
           nom: nom.value,
@@ -143,6 +150,9 @@ export function modifTeam(teamId) {
   
 }
 
+/**
+ * ajout d'une ecurie
+ */
 export function addTeam() {
     let tmp = {
       nom : nom.value,
@@ -182,6 +192,10 @@ export function addTeam() {
       });
 }
 
+/**
+ * ajout d'une ligne lorsqu'on ajoute une entité
+ * @param {*} tmp 
+ */
 export function newLine(tmp) {
     let myListe = document.querySelector('#myListe');
     let btn = document.querySelector('#btn');
@@ -208,6 +222,10 @@ export function newLine(tmp) {
     });
  }
 
+ /**
+  * supprimer une ecurie
+  * @param {*} tmp 
+  */
 export function deleteTeam(tmp) {
     let myHeaders = new Headers();
     let opt = {
