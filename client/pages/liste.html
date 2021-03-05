@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+          <p>Pour retourner à l'accueil, cliquez sur le bouton</p>
+          <a href="/" class="btn btn-info active" role="button" aria-pressed="true">Accueil</a>
+          <p class="lead">Voici la liste des écuries, avec leur nom, emplacement du siège social, le moteur, et d'autres informations.</p>
+          <h1>Le titre</h1>
+          <div class="row mb2">
+            <div class="themed-grid-col">
+              <table class="table table-striped">
+                <thead>
+                  <th>#</th>
+                  <th>Nom</th>
+                  <th>Siège social</th>
+                  <th>Moteur</th>
+                  <th>Chassis</th>
+                  <th>Livrée</th>
+                  <th>Sponsors</th>
+                  <th>Modification</th>
+                  <th>Suppression</th>
+                </thead>
+                <tbody id="myListe">
+                </tbody>
+              </table>
+            </div>                      
+            <div class="text-center">
+              <a href="detail.html" class="btn btn-outline-primary active" role="button" aria-pressed="true">Ajouter une écurie</a>
+            </div>
+          </div>
+      </div>
+    </main>
+    <script src="../script/script-liste.js"></script>
+  </body>
+</html>
