@@ -25,8 +25,10 @@ fetch(url, options)
 
         let infos = document.createElement('p');
         let meteo = document.createElement('p');
+        infos.classList.toggle('lead');
+        meteo.classList.toggle('lead');
         infos.innerHTML = 'Circuit de \'' + response.name + '\'';
-        meteo.innerHTML = 'Météo : ' + response.weather[0].main + ', ' + response.weather[0].description+ ', température du circuit :' + (response.main.temp - 32) / 1.8000 + ' degrès'
+        meteo.innerHTML = 'Météo : ' + response.weather[0].main + ', ' + response.weather[0].description+ ', température du circuit : ' + Math.round(response.main.temp - 273) + '°C'
         
         div.appendChild(infos);
         div.appendChild(meteo);
